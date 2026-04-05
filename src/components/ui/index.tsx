@@ -16,7 +16,7 @@ export function StatusBadge({ status }: { status: string }) {
     completed: { v: "muted",      l: "Completed" },
     "on-time": { v: "sage",       l: "On Time" },
     delayed:   { v: "gold",       l: "Delayed" },
-    cancelled: { v: "terracotta", l: "Cancelled" },
+    cancelled: { v: "muted", l: "Cancelled" },
   };
   const { v, l } = map[status] ?? { v: "muted", l: status };
   return <Badge variant={v}>{l}</Badge>;
